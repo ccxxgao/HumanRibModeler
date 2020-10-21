@@ -1,7 +1,11 @@
-<br><br>
-### __Instructions To Install Third-Party Python Libraries (scipy, pandas):__
-<br>
+## Description
+This Blender add-on generates human rib bones based on subject's age, sex, height, and weight. Example below:
 
+![alt text](https://github.com/ccxxgao/HumanRibModeler/blob/master/Rendered%20Images/F_35_1.65_75_anterior.png?raw=true)
+
+
+## Add-On Setup
+### __Install Third-Party Python Libraries (scipy, pandas):__
 1.  In Blender's Python console, run:
     ```
     import sys
@@ -33,9 +37,7 @@
 The packages should be installed now, and you should be able to run my plugin code in Blender!
 
 <br><br>
-### __Instructions To Load Rib and Periosteum Plugins in Blender:__
-<br>
-
+### __Load Rib and Periosteum Plugins in Blender:__
 1. Open midterm_project.blend
 
 2. Go to 'Scripting' tab
@@ -57,9 +59,7 @@ The packages should be installed now, and you should be able to run my plugin co
 You should be able to use the plugins now!
 
 <br><br>
-### __Instructions To Use Rib Plugin:__
-<br>
-
+### __How to Use Rib Plugin:__
 1. Toggle to the 'Human Rib' tab in the Preferences Panel.
 
 2. Change the input parameters to the subject of interest. Change the subject's demographics (sex, age, height weight). You can also toggle to the 'Custom' mode to modify individual parameters.
@@ -69,9 +69,7 @@ You should be able to use the plugins now!
 4. Click 'Create Rib(cage)' button at the bottom to generate your rib(s)!
 
 <br><br>
-### __Instructions To Use Periosteum Plugin:__
-<br>
-
+### __How to Use Periosteum Plugin:__
 1. Make sure Blender's built-in 'Node' add-ons are enabled:
     1. Go to Blender Preferences: Edit > Preferences
     2. Search 'Node'
