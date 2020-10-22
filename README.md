@@ -35,7 +35,6 @@ Rendered example below:
     ./python3.5m -m pip install pandas
     ./python3.5m -m pip install numpy   # the most recent version of Blender should come preinstalled with this
     ```
-<br><br>
 ### __Load Rib and Periosteum Plugins in Blender:__
 1. Open midterm_project.blend
 
@@ -53,7 +52,6 @@ Rendered example below:
 
 6. Two tabs titled 'Human Rib' and 'Periosteum' should appear in the Properties Panel.
 
-<br><br>
 ### __How to Use Rib Plugin:__
 
 1. Toggle to the 'Human Rib' tab in the Preferences Panel.
@@ -64,7 +62,6 @@ Rendered example below:
 
 4. Click 'Create Rib(cage)' button at the bottom to generate your rib(cage)!
 
-<br><br>
 ### __How to Use Periosteum (Texturing) Plugin:__
 1. Make sure Blender's built-in 'Node' add-ons are enabled:
     1. Go to Blender Preferences: Edit > Preferences
