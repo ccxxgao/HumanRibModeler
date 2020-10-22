@@ -53,8 +53,9 @@ Rendered example below:
 
 6. Two tabs titled 'Human Rib' and 'Periosteum' should appear in the Properties Panel.
 
-<br>
+<br><br>
 ### __How to Use Rib Plugin:__
+
 1. Toggle to the 'Human Rib' tab in the Preferences Panel.
 
 2. Change the input parameters to the subject of interest. Change the subject's demographics (sex, age, height weight). You can also toggle to the 'Custom' mode to modify individual parameters.
