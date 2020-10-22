@@ -1,5 +1,7 @@
 ## Description
-This Blender add-on generates human rib bones based on subject's age, sex, height, and weight. Example below:
+This Blender add-on generates models of human rib bones based on subject's age, sex, height, and weight (based on research published by Holcombe et al. [2016](https://doi.org/10.1016/j.jbiomech.2016.07.021) and [2017](https://doi.org/10.1111/joa.12632)).
+
+Rendered example below:
 
 ![alt text](https://github.com/ccxxgao/HumanRibModeler/blob/master/Rendered%20Images/F_35_1.65_75_anterior.png?raw=true)
 
@@ -14,7 +16,7 @@ This Blender add-on generates human rib bones based on subject's age, sex, heigh
 
     This should return the location of the Blender's python package, e.g.,
     ```
-    /Applications/Blender.app/Contents/Resources/2.90/python`
+    /Applications/Blender.app/Contents/Resources/2.90/python
     ```
 2. In a regular terminal, run:
     ```
@@ -33,9 +35,6 @@ This Blender add-on generates human rib bones based on subject's age, sex, heigh
     ./python3.5m -m pip install pandas
     ./python3.5m -m pip install numpy   # the most recent version of Blender should come preinstalled with this
     ```
-<br>
-The packages should be installed now, and you should be able to run my plugin code in Blender!
-
 <br><br>
 ### __Load Rib and Periosteum Plugins in Blender:__
 1. Open midterm_project.blend
@@ -55,10 +54,6 @@ The packages should be installed now, and you should be able to run my plugin co
 6. Two tabs titled 'Human Rib' and 'Periosteum' should appear in the Properties Panel.
 
 <br>
-
-You should be able to use the plugins now!
-
-<br><br>
 ### __How to Use Rib Plugin:__
 1. Toggle to the 'Human Rib' tab in the Preferences Panel.
 
@@ -66,10 +61,10 @@ You should be able to use the plugins now!
 
 3. Change the rendering settings. Choose whether you want to generate the full set or a single rib or just the outline (no lofting).
 
-4. Click 'Create Rib(cage)' button at the bottom to generate your rib(s)!
+4. Click 'Create Rib(cage)' button at the bottom to generate your rib(cage)!
 
 <br><br>
-### __How to Use Periosteum Plugin:__
+### __How to Use Periosteum (Texturing) Plugin:__
 1. Make sure Blender's built-in 'Node' add-ons are enabled:
     1. Go to Blender Preferences: Edit > Preferences
     2. Search 'Node'
