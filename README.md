@@ -1,5 +1,5 @@
 ## Description
-This Blender add-on generates models of human rib bones based on subject's age, sex, height, and weight (based on research published by Holcombe et al. [2016](https://doi.org/10.1016/j.jbiomech.2016.07.021) and [2017](https://doi.org/10.1111/joa.12632)).
+This Blender add-on generates models of human rib bones based on subject's age, sex, height, and weight (based on research published by Holcombe et al. in [2016](https://doi.org/10.1016/j.jbiomech.2016.07.021) and [2017](https://doi.org/10.1111/joa.12632)).
 
 Rendered example below:
 
