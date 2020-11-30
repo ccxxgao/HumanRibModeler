@@ -18,7 +18,7 @@
 
 bl_info = {
     "name": "Periosteum Texturing",
-    "description": "Appply bone-like texturing to objects",
+    "description": "Apply bone-like texturing to objects",
     "author": "Cecily <cecily.gao@yale.edu>",
     "version": (1, 0),
     "blender": (2, 83, 0),
