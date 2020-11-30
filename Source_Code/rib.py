@@ -45,7 +45,7 @@ Linear Regression Models for Rib Generation
 '''
 
 # Read csv files for linear regression parameters
-path_to_data = '/Users/cecegao/Desktop/Fall 2020/Graphics/Midterm Project/Gao_Cecily_Graphics_Project_1/RibLinReg/'
+path_to_data = '/Users/username/Desktop/HumanRibModeler/RibLinReg/'
 
 S_x_df      = pd.read_csv(path_to_data + 'S_x.csv', index_col=0)
 X_pk_df     = pd.read_csv(path_to_data + 'X_pk.csv', index_col=0)
@@ -193,15 +193,13 @@ class RIB_Create(Operator):
         else:
             ribSet = bpy.data.collections.new("Ribs")
             context.scene.collection.children.link(ribSet)
+            # Set rib collection as active collection
+            ribColl = context.view_layer.layer_collection.children[ribSet.name]
+            context.view_layer.active_layer_collection = ribColl
 
             for i in range (1, 13):
                 rib = generateRib(context, sides, outlineOnly, i, distScale)
                 mirror(rib)         # Mirror to get right rib
-                ribSet.objects.link(rib)
-                try:
-                    bpy.context.scene.collection.objects.unlink(rib) 
-                except:
-                    print('Cannot unlink')
             
         return {'FINISHED'}
 
@@ -596,9 +594,9 @@ def loftedRib(bm, mesh, scale, parameters, ribNum, distScale, outline=True):
 
     S = Matrix.Scale(scale, 4)
     print(ribNum, parameters['alpha_ph'])
-    R_ph = Matrix.Rotation(parameters['alpha_ph'], 4, 'Z')
-    # R_bh = Matrix.Rotation(parameters['alpha_bh'], 4, 'Y')
-    # R_ls = Matrix.Rotation(parameters['alpha_ls'], 4, 'Z')
+    R_ph = Matrix.Rotation(parameters['alpha_ph'], 4, 'Y')
+    R_bh = Matrix.Rotation(parameters['alpha_bh'], 4, 'X')
+    R_ls = Matrix.Rotation(parameters['alpha_ls'], 4, 'Z')
 
     # Translate ribs into a stack (does NOT follow real path)
     vertical_difference = 0.1 + 0.04/95.0*distScale
@@ -606,8 +604,8 @@ def loftedRib(bm, mesh, scale, parameters, ribNum, distScale, outline=True):
 
     mesh.transform(S)
     mesh.transform(R_bh)
-    # mesh.transform(R_ph)
-    # mesh.transform(R_ls)
+    mesh.transform(R_ph)
+    mesh.transform(R_ls)
     mesh.transform(T)
 
     mesh.update()
